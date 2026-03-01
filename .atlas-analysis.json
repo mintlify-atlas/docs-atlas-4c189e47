@@ -1,0 +1,214 @@
+{
+  "projectType": "cli-tool",
+  "projectName": "Hoofy",
+  "projectDescription": "AI development companion MCP server with persistent memory, spec-driven development, and adaptive change pipeline",
+  "theme": "aspen",
+  "primaryColor": "#8b5cf6",
+  "lightColor": "#a78bfa",
+  "darkColor": "#7c3aed",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/memory-system",
+              "concepts/change-pipeline",
+              "concepts/project-pipeline",
+              "concepts/bootstrap",
+              "concepts/clarity-gate",
+              "concepts/knowledge-graph"
+            ]
+          },
+          {
+            "group": "Workflows",
+            "pages": [
+              "workflows/overview",
+              "workflows/explore",
+              "workflows/new-project",
+              "workflows/existing-project",
+              "workflows/ad-hoc-sessions",
+              "workflows/memory-best-practices"
+            ]
+          },
+          {
+            "group": "Integration",
+            "pages": [
+              "integration/claude-code",
+              "integration/cursor",
+              "integration/vscode-copilot",
+              "integration/opencode",
+              "integration/gemini-cli"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Tool Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "tools/overview"
+            ]
+          },
+          {
+            "group": "Memory Tools",
+            "pages": [
+              "tools/memory/mem-save",
+              "tools/memory/mem-search",
+              "tools/memory/mem-context",
+              "tools/memory/mem-relate",
+              "tools/memory/mem-build-context",
+              "tools/memory/mem-session",
+              "tools/memory/mem-progress",
+              "tools/memory/mem-compact"
+            ]
+          },
+          {
+            "group": "Change Pipeline",
+            "pages": [
+              "tools/change/sdd-change",
+              "tools/change/sdd-context-check",
+              "tools/change/sdd-change-advance",
+              "tools/change/sdd-change-status",
+              "tools/change/sdd-adr"
+            ]
+          },
+          {
+            "group": "Project Pipeline",
+            "pages": [
+              "tools/project/sdd-init-project",
+              "tools/project/sdd-create-proposal",
+              "tools/project/sdd-generate-requirements",
+              "tools/project/sdd-create-business-rules",
+              "tools/project/sdd-clarify",
+              "tools/project/sdd-create-design",
+              "tools/project/sdd-create-tasks",
+              "tools/project/sdd-validate",
+              "tools/project/sdd-get-context"
+            ]
+          },
+          {
+            "group": "Bootstrap Tools",
+            "pages": [
+              "tools/bootstrap/sdd-reverse-engineer",
+              "tools/bootstrap/sdd-bootstrap"
+            ]
+          },
+          {
+            "group": "Standalone Tools",
+            "pages": [
+              "tools/standalone/sdd-explore",
+              "tools/standalone/sdd-suggest-context",
+              "tools/standalone/sdd-review"
+            ]
+          },
+          {
+            "group": "Prompts",
+            "pages": [
+              "tools/prompts/overview",
+              "tools/prompts/sdd-start",
+              "tools/prompts/sdd-status",
+              "tools/prompts/sdd-stage-guide",
+              "tools/prompts/sdd-memory-guide",
+              "tools/prompts/sdd-change-guide",
+              "tools/prompts/sdd-bootstrap-guide"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "guides/first-project",
+              "guides/first-feature",
+              "guides/bug-fix-workflow"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "guides/knowledge-graph",
+              "guides/wave-assignments",
+              "guides/business-rules",
+              "guides/clarity-gate-deep-dive",
+              "guides/plugin-system"
+            ]
+          },
+          {
+            "group": "Best Practices",
+            "pages": [
+              "guides/best-practices/specs-first",
+              "guides/best-practices/right-sizing-changes",
+              "guides/best-practices/memory-management",
+              "guides/best-practices/context-engineering"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Research",
+        "groups": [
+          {
+            "group": "Foundations",
+            "pages": [
+              "research/overview",
+              "research/anthropic-engineering",
+              "research/industry-studies",
+              "research/requirements-engineering",
+              "research/business-rules"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Persistent memory with SQLite + FTS5 full-text search",
+    "Knowledge graph with typed relations between observations",
+    "Adaptive change pipeline with 12 flow variants",
+    "Clarity Gate with 8-dimension ambiguity analysis",
+    "Business rules extraction using BRG taxonomy",
+    "Reverse-engineer existing codebases into SDD artifacts",
+    "Spec-aware code review against requirements and business rules",
+    "38 MCP tools + 6 on-demand prompts",
+    "Hot/Cold instruction architecture for token efficiency",
+    "Wave assignments for parallel task execution"
+  ],
+  "publicApiSurface": [
+    "hoofy serve - Start MCP server",
+    "hoofy update - Update to latest version",
+    "mem_save - Save observation to memory",
+    "mem_search - Full-text search across sessions",
+    "mem_context - Recent observations for session startup",
+    "mem_relate - Create typed relation between observations",
+    "mem_build_context - Traverse knowledge graph",
+    "sdd_change - Create adaptive change pipeline",
+    "sdd_context_check - Mandatory conflict scanner",
+    "sdd_change_advance - Advance to next pipeline stage",
+    "sdd_init_project - Initialize greenfield project",
+    "sdd_clarify - Run Clarity Gate",
+    "sdd_reverse_engineer - Scan existing codebase",
+    "sdd_bootstrap - Write SDD artifacts",
+    "sdd_explore - Pre-pipeline context capture",
+    "sdd_suggest_context - Ad-hoc context recommendation",
+    "sdd_review - Spec-aware code review",
+    "sdd_adr - Capture Architecture Decision Records",
+    "sdd_create_business_rules - Extract business rules from requirements",
+    "sdd_create_tasks - Generate task breakdown with dependencies"
+  ]
+}
